@@ -29,3 +29,5 @@ using UDT in create table
 
 CREATE TABLE users (id uuid, name frozen <full_name>, PRIMARY KEY ((id)));
 
+
+
