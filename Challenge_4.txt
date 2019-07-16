@@ -1,0 +1,31 @@
+TRUNCATE table1;  -- Deletes all data in the table
+
+Alter table
+===========
+
+Add column - ALTER TABLE table1 ADD another_column text;
+
+Drop column - ALTER TABLE table1 DROP another_column;
+
+***Cannot alter PRIMARY KEY***
+
+Collection column
+=================
+
+SET<TEXT>     - unique values, ordered by values
+LIST<TEXT>    - non-unique values, ordered by position 
+MAP<TEXT,INT> - ordered by unique keys
+
+UDT
+===
+
+User Defined Type
+
+Complex data within single column
+
+CREATE TYPE full_name (first_name text, last_name text);
+
+using UDT in create table
+
+CREATE TABLE users (id uuid, name frozen <full_name>, PRIMARY KEY ((id)));
+
