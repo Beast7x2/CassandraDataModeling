@@ -1,0 +1,7 @@
+Download oracle virtual box manager
+
+Cqlsh
+
+To display built-in keyspaces and All keyspaces
+SELECT * FROM system_schema.keyspaces;
+
