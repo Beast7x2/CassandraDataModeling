@@ -1,0 +1,21 @@
+Counter
+========
+
+  - Default value is 0
+  - You can only either increment or decrement the value
+  - Cannot assign value directly
+  - Multiple columns can be used
+  - Non-parition column
+  - It has concurrency issues so it is not 100% accurate
+
+Source
+======
+  - Executes all the cql statements
+  - Enclose file name in single quotes
+  - Output for each statement appears in turn
+  
+SOURCE './script.cql';
+
+
+  
+ 
