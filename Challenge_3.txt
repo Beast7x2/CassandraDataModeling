@@ -1,0 +1,11 @@
+Upsert - If row is there then Update if not then do Insert (Insert may cause Update, Update may cause Insert)
+
+Clustering columns - To uniquely identify record, stored in sorted order(specify ASC or DSEC when creating table) default is ASC
+
+  - Can perform range queries only on clustering column
+  - Multiple columns can be a clustering columns
+  - Based on the clustering column order while creating table - Result will be sorted
+  
+C* automatically orders the column based on the partition key then clustering columns then other columns in Alphabetical order
+
+
