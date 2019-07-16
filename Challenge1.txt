@@ -1,0 +1,45 @@
+Keyspace - Similar to database schema
+
+CREATE KEYSPACE killrvideo WITH REPLICATION = { 'class':'SimpleStrategy', 'replication_factor' : 1 };
+
+Replication parameter is required
+
+To use that KEYSPACE
+====================
+cqlsh> USE killrvideo
+
+To create table
+===============
+CREATE TABLE table1 { column1 TEXT, column2 TEXT, column3 TEXT, PRIMARY KEY (column1) };
+
+Basic Data Types
+================
+text 
+int
+
+UUID & TIMEUUID
+===============
+
+UUID - universally Unique Identifier - uuid()
+TIMEUUID - embeds a Timestamp value with UUID - For timeseries data - sortable - now()
+
+
+COPY
+====
+
+imports/exports CSV data into the table
+
+COPY table(column1, column2, column3) FROM 'tabledata.csv';
+
+SELECT
+======
+
+SELECT * FROM table1;
+
+SELCT column1, column2 FROM table1;
+
+SELECT COUNT(*) FROM table1;
+
+SELECT * FROM table1 LIMIT 10;
+
+
