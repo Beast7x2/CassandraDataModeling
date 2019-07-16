@@ -1,0 +1,8 @@
+Cassandra physical storage
+
+Primary key -> 1 -> row with key as column name and value as the table value (Map)
+
+Hashing on parition key to decide the node to store data.
+
+composite parition keys - more than one column as partition key.
+
