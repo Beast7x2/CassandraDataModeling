@@ -1,0 +1,3 @@
+When using multiple clustering columns. 
+If you need one one column to be desc order then you'll need to mentioned all other clustering column in ASC order.
+
