@@ -1,0 +1,11 @@
+Conceptual Data Modeling
+=========================
+
+Chen notation
+
+-Understand you data
+-Essential objects
+-Constraints
+
+ER diagram - Entity Relationship
+
