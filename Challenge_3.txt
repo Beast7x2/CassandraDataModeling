@@ -6,6 +6,6 @@ Clustering columns - To uniquely identify record, stored in sorted order(specify
   - Multiple columns can be a clustering columns
   - Based on the clustering column order while creating table - Result will be sorted
   
-C* automatically orders the column based on the partition key then clustering columns then other columns in Alphabetical order
+C* automatically orders the column based on the partition key then clustering columns then other columns in Alphabetical order ( Table structure column order not query result order)
 
 
