@@ -1,0 +1,23 @@
+Partition size
+===============
+
+Number of values(cell - key,value pairs) in a partition - 2 Billion (100's of MB size)
+
+Formula
+-------
+
+
+1. No. for values = No. of rows x ( No. of columns - No. of Primary Key - No. of static column) + No. of static column (if ( No. of columns - No. of Primary Key - No. of static column) != 0)
+
+
+2. No. for values = No. of rows  + No. of static column (if ( No. of columns - No. of Primary Key - No. of static column) == 0)
+
+
+
+Partition size
+===============
+sum of PK datatype size + sum of static column datatype size + No. of rows in the table 
+  X sum of each colum( each normal colum size + sum of clustering column datatype size) + 8(every cell has timestamp in cassandra)
+  X No. of values from previous formula
+
+
