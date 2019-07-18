@@ -2,3 +2,7 @@ Chebotko Diagram
 ================
 
 Visual diagram for Cassandra table and access patterns
+
+Partition per query
+Partition + per query (Query needs to access multiple partitions)
+
