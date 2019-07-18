@@ -4,5 +4,22 @@ Chebotko Diagram
 Visual diagram for Cassandra table and access patterns
 
 Partition per query
-Partition + per query (Query needs to access multiple partitions)
+Partition+ per query (Query needs to access multiple partitions)
+Better to join data than to join data
+
+
+Logical Mapping Rules
+-----------------------
+1. Entities and relationships
+2. Equality search attributes (K)
+3. Inequality search attributes (C)
+4. Ordering attributes (C)
+5. Key attributes (C) (For uniqueness)
+
+
+Static column stored once per partition
+
+
+
+
 
