@@ -1,0 +1,4 @@
+Chebotko Diagram
+================
+
+Visual diagram for Cassandra table and access patterns
