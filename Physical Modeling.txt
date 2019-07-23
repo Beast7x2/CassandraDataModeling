@@ -21,3 +21,32 @@ sum of PK datatype size + sum of static column datatype size + No. of rows in th
   X No. of values from previous formula
 
 
+Data Duplication
+----------------
+Avoid non constant duplication factor
+
+Data consistency
+-----------------
+In C* you cannot update primary key value
+Use Batch for set of queries for consistency
+
+Client side joins
+-----------------
+Never use it, If you can avoid it
+use query efficiently
+
+
+Transaction
+-----------
+Lightweight transactions - check condition and perform Insert/Update/Delete
+
+Insert ... IF NOT EXISTS
+
+Expensive then normal read/write
+
+
+Aggregation
+===========
+
+count()
+
