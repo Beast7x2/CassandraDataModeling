@@ -50,3 +50,8 @@ Aggregation
 
 count()
 
+concurrent access - update
+ use light weight transaction to ensure data - failed LWT must be retried
+ Or do better data modeling
+ 
+ 
